@@ -6,7 +6,7 @@ This OS is made by some Russian guys
 
 ## Building
 You will need: **Linux or WSL2**
-1. Install docker using `sudo apt install docker`
+1. Install docker engine following this tutorial for Ubuntu: https://docs.docker.com/engine/install/ubuntu/
 2. Go into project folder and start ./buildenv.sh
 3. After building, it opens enviroment console (next time when you start this script it starts very fast)
 4. Execute `make build` and wait, when it completes
