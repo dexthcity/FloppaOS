@@ -25,6 +25,7 @@ $(x86_64_asm_object_files): artefacts/boot/%.o : src/boot/%.asm
 
 build: $(kernel_object_files) $(x86_64_object_files)
 	mkdir -p iso_content && \
+	mkdir -p artefacts/binary && \
 	x86_64-elf-ld -n -o artefacts/binary/kernel.bin -T src/linker.ld $(kernel_object_files) $(x86_64_object_files) && \
 	cp artefacts/binary/kernel.bin iso_content/boot/kernel.bin && \
 	grub-mkrescue -o build/FloppaOS.iso iso_content
