@@ -1,7 +1,6 @@
 #include "print.h"
 
 void kernel_main() {
-    char str1[50];
     print_clear(); // нихуя очистка
     print_set_color(PRINT_COLOR_WHITE, PRINT_COLOR_BLACK);
     print_str("Welcome to FloppaOS!\n"); // нихуя вывод
