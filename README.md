@@ -2,11 +2,11 @@
 the best os with big russian cat floppa
 
 ## About
-This OS is made by some Russian guys
+This OS is made by some Russian guys, who likes nastoyashie vkusnie pelmeni v kotorih mnogo myasa i malo testa
 
 ## Building
 You will need: **Linux or WSL2**
-1. Install docker engine following this tutorial for Ubuntu: https://docs.docker.com/engine/install/ubuntu/ \
+1. Install docker engine following this tutorial for Ubuntu: https://docs.docker.com/engine/install/ubuntu/
   NOTE: Another distros are supported as well, but the installation steps are different.
 2. Go into project folder and start ./buildenv.sh
 3. After building, it opens enviroment console (next time when you start this script it starts very fast)
