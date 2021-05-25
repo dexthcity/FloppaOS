@@ -20,4 +20,5 @@ For further updates, you can simply run `git pull` and then repeat steps 2-5.
 If the build is not successful after the update, try running `make clean`, and then try building again.
 
 ## Discord server
-https://discord.gg/mCrPFtrQH8
+https://discord.gg/mCrPFtrQH8 - FloppaOS
+https://discord.gg/VBJ4TmFepm - ITNetwork
