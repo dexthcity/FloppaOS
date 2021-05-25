@@ -21,4 +21,3 @@ If the build is not successful after the update, try running `make clean`, and t
 
 ## Discord server
 https://discord.gg/mCrPFtrQH8 - FloppaOS
-https://discord.gg/VBJ4TmFepm - ITNetwork
