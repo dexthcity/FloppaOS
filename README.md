@@ -10,3 +10,8 @@ If the build is not successful after the update, try running `make clean`, and t
 
 ## Discord server
 https://discord.gg/mCrPFtrQH8 - FloppaOS
+
+## Ready to use build
+To download it, open terminal and type:
+
+	wget https://github.com/coffee100percnt/FloppaOS/raw/main/builds/1.1.zip
