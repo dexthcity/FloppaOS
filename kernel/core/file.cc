@@ -70,7 +70,8 @@ File::~File(){
 	while (n!=NULL){
 		//io.print("delete %s \n",n->getName());
 		nn=n->getNext();
-		delete n;
+		//delete n;
+		kfree(n); //ugly fix, but i have no more ideas
 		n=nn;
 	}
 	
@@ -220,7 +221,8 @@ u32	File::ioctl(u32 id,u8* buffer){
 }
 
 u32	File::remove(){
-	delete this;
+	//delete this;
+	kfree(this); //still ugly fix
 	return NOT_DEFINED;
 }
 

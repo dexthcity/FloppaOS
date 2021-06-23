@@ -69,7 +69,8 @@ u32	Variable::ioctl(u32 id,u8* buffer){
 
 /* destruction de la variable */
 u32	Variable::remove(){
-	delete this;
+	//delete this;
+	kfree(this);
 	return NOT_DEFINED;
 }
 

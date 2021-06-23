@@ -33,7 +33,7 @@ u32	ModLink::ioctl(u32 id,u8* buffer){
 }
 
 u32	ModLink::remove(){
-	delete this;
+	kfree(this);
 }
 
 void ModLink::scan(){

@@ -9,7 +9,8 @@ char* Process::default_tty="/dev/tty";
 u32 Process::proc_pid=0;
 
 Process::~Process(){
-	delete ipc;
+	//delete ipc;
+	kfree(ipc); //still ugly, but i think it's works
 	arch.change_process_father(this,pparent);	//on change le pere des enfants	
 }
 
@@ -103,7 +104,8 @@ u32	Process::wait(){
 }
 
 u32	Process::remove(){
-	delete this;
+	//delete this;
+	kfree(this); //ugly, very ugly
 	return RETURN_OK;
 }
 

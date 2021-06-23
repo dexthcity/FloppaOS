@@ -23,7 +23,8 @@ void Filesystem::init(){
 }
 
 Filesystem::~Filesystem(){
-	delete root;
+	//delete root;
+	kfree(root); //another ugly fix
 }
 
 void Filesystem::mknod(char* module,char* name,u32 flag){

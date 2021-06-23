@@ -55,13 +55,13 @@ geniso:
 	cd $(SDKDIR) &&	sh ./cdrom.sh
 
 %.o: %.cc
-	$(SC) $(FLAG) -c $< -o  $@
+	$(SC) $(FLAG) -c $< -o $@
 	
 %.o: %.S
-	$(SC) $(FLAG) -c $< -o  $@
+	$(SC) $(FLAG) -c $< -o $@
 	
 %.o: %.asm
-	$(ASM) $(ASMFLAG)  -c $< -o  $@
+	$(ASM) $(ASMFLAG) -o $@ $<
 
 
 clean:

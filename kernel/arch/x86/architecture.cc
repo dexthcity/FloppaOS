@@ -297,7 +297,7 @@ void Architecture::destroy_all_zombie(){
 		pn=p->getPNext();
 		if (p->getState()==ZOMBIE && p->getPid()!=1){
 			destroy_process(p);
-			delete p;
+			kfree(p);
 		}
 		
 		p=pn;

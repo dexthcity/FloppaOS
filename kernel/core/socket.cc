@@ -33,7 +33,7 @@ u32	Socket::ioctl(u32 id,u8* buffer){
 }
 
 u32	Socket::remove(){
-	delete this;
+	kfree(this);
 }
 
 void Socket::scan(){

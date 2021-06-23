@@ -9,10 +9,10 @@ help:
 all: 
 	@echo "Building Kernel"
 	make -C ./kernel
-	@echo "Building SDK"
-	make -C ./sdk
-	@echo "Building Userland"
-	make -C ./userland
+#	@echo "Building SDK"
+#	make -C ./sdk
+#	@echo "Building Userland"
+#	make -C ./userland
 	
 
 build:

@@ -37,7 +37,7 @@ u32	User::ioctl(u32 id,u8* buffer){
 }
 
 u32	User::remove(){
-	delete this;
+	kfree(this);
 }
 
 void User::scan(){
