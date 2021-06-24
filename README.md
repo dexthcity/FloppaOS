@@ -1,3 +1,5 @@
+[![CI](https://github.com/deviceesamp/FloppaOS/actions/workflows/main.yml/badge.svg)](https://github.com/deviceesamp/FloppaOS/actions/workflows/main.yml)
+
 # FloppaOS
 the best os with big russian cat floppa
 
