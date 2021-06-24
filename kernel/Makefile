@@ -15,7 +15,7 @@ FLAG :=$(FLAG) -D__$(ARCH)__
 PLATFORMS= `find ./arch/ -type d | sed "s/.*\///" | sort`
 
 
-all: $(KERNEL)
+default: $(KERNEL)
 
 $(KERNEL): $(OBJS)
 	$(LD) $(LDFLAG) -o $@ $^ 

@@ -1,5 +1,5 @@
 
-all: 
+default: 
 	@echo "Building LibC"
 	make -C ./src/libc
 	

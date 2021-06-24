@@ -1,21 +1,21 @@
 SDKDIR=./sdk
 
-help:
-	@echo "Makefile for Building Dev Operating System."
-	@echo "Usage: make [ all | clean | help | build | run] " 
-	@echo ""
-	@echo
-
-all: 
+default: 
 	@echo "Building Kernel"
 	make -C ./kernel
 #	@echo "Building SDK"
 #	make -C ./sdk
 #	@echo "Building Userland"
 #	make -C ./userland
+
+help:
+	@echo "Makefile for Building Dev Operating System."
+	@echo "Usage: make [ clean | help | zip | run] " 
+	@echo ""
+	@echo
 	
 
-build:
+zip:
 	zip -r devos-$(VERSION).zip ./
 
 
