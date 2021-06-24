@@ -29,4 +29,4 @@ jobs:
       - name: Install tools
         run: sudo apt install nasm
       - name: Build
-        run: make all
+        run: make
