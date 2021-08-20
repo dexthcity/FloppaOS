@@ -30,3 +30,8 @@ jobs:
         run: sudo apt install nasm
       - name: Build
         run: make
+      - name: Upload kernel.elf
+        uses: actions/upload-artifact@v2
+        with:
+          name: kernel.elf
+          path: sdk/bootdisk/kernel.elf
